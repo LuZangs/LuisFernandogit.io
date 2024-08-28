@@ -27,15 +27,11 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     margin: 5 5px;
-    
 }
 
 nav a:hover {
     background-color: #ff0000;
-    
 }
-
-
 
 /* Efeito Parallax */
 .parallax {
@@ -50,7 +46,7 @@ nav a:hover {
 
 /* Seções */
 section {
-    font-size:x-large;
+    font-size: x-large;
     padding: 50px;
     margin: 30px auto;
     max-width: 1600px;
@@ -59,10 +55,10 @@ section {
     box-shadow: none;
 }
 
-li{
+li {
     margin-bottom: 20px;
-
 }
+
 /* Rodapé */
 footer {
     background-color: rgba(0, 0, 0, 0.7);
@@ -96,6 +92,7 @@ p {
     line-height: 1.6;
     color: white;
 }
+
 .container {
     max-width: 500px;
     margin: 0 auto;
@@ -125,7 +122,6 @@ textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    
 }
 
 textarea {
@@ -141,36 +137,56 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
 }
- /* Responsividade */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-            }
 
-            nav button {
-                width: 100%;
-                margin: 0.5rem 0;
-            }
-
-            .container {
-                padding: 1rem;
-            }
-
-            .parallax {
-                height: 200px;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .container {
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            .container section {
-                width: 45%;
-            }
-        }
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 20px;
+        font-size: large;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    footer {
+        position: relative;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 10px;
+        font-size: medium;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
