@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    /* Fundo preto */
 }
 
 /* Cabeçalho */
@@ -26,7 +25,8 @@ nav a {
     color: rgb(255, 255, 255);
     padding: 14px 20px;
     text-decoration: none;
-    margin: 5 5px;
+    display: inline-block;
+    margin: 5px;
 }
 
 nav a:hover {
@@ -36,7 +36,6 @@ nav a:hover {
 /* Efeito Parallax */
 .parallax {
     background-image: url('assets/img/blood-moon-mountains-scenery-4k-wallpaper-uhdpaper.com-225@0@k (1).jpg');
-    /* Substitua pela sua imagem de fundo */
     height: 250px;
     background-attachment: fixed;
     background-position: center;
@@ -46,13 +45,11 @@ nav a:hover {
 
 /* Seções */
 section {
-    font-size: x-large;
-    padding: 50px;
+    font-size: large;
+    padding: 20px;
     margin: 30px auto;
     max-width: 1600px;
     color: #ffffff;
-    /* Transparência nas seções */
-    box-shadow: none;
 }
 
 li {
@@ -62,13 +59,10 @@ li {
 /* Rodapé */
 footer {
     background-color: rgba(0, 0, 0, 0.7);
-    /* Transparência no rodapé */
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
 
 /* Imagem de Perfil */
@@ -144,9 +138,14 @@ input[type="submit"]:hover {
 
 /* Responsividade */
 @media only screen and (max-width: 768px) {
-    section {
-        padding: 20px;
-        font-size: large;
+    header, nav, section, footer {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        padding: 10px;
     }
 
     .profile-img {
@@ -154,15 +153,9 @@ input[type="submit"]:hover {
         height: 100px;
     }
 
-    nav a {
-        display: block;
+    section {
         padding: 10px;
-        margin: 5px 0;
-    }
-
-    footer {
-        position: relative;
-        padding: 20px;
+        margin: 20px auto;
     }
 }
 
@@ -175,18 +168,18 @@ input[type="submit"]:hover {
         font-size: 20px;
     }
 
-    section {
-        padding: 10px;
-        font-size: medium;
-    }
-
     .profile-img {
         width: 80px;
         height: 80px;
     }
 
+    section {
+        padding: 5px;
+        font-size: medium;
+    }
+
     nav a {
-        font-size: 14px;
         padding: 8px;
+        font-size: 14px;
     }
 }
